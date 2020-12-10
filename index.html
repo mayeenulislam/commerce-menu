@@ -193,7 +193,7 @@
                 var target = this_elem.data('target');
                 var target_elem = $('#' + target);
 
-                $('.drawer').removeClass('open');
+                $('.drawer').not(target_elem).removeClass('open');
 
                 if(target_elem.hasClass('open')) {
                     target_elem.removeClass('open');
